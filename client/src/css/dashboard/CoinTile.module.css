@@ -1,0 +1,40 @@
+.CoinTile {
+  width: 90%;
+  height: 60px;
+  border: 1px solid rgba(128, 128, 128, 0.171);
+  color: rgb(190, 188, 188);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding-inline: 5px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  width: 20%;
+}
+
+.logo {
+  height: 70%;
+  width: 70%;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 10%;
+}
+
+.name {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

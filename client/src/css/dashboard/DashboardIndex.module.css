@@ -1,0 +1,184 @@
+.accountDetails {
+  width: 98%;
+  border-radius: 50px;
+  border: 1px solid white;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.balance {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-inline-start: 30px;
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.balanceTitle {
+  font-size: 0.6rem;
+  color: rgb(192, 197, 201);
+}
+
+.mainBalance {
+  font-size: 3rem;
+}
+
+.cur {
+  color: rgb(181, 184, 16);
+  font-size: 0.6rem;
+}
+
+.activities {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-inline-end: 30px;
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100px;
+}
+
+.deposit {
+  width: 80%;
+  height: 30%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(136, 140, 145);
+  color: rgb(211, 212, 214);
+  transition: 300ms;
+}
+
+.withdraw {
+  height: 30%;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  word-break: break-all;
+  background-color: rgb(136, 140, 145);
+  color: rgb(211, 212, 214);
+  transition: 300ms;
+}
+
+.mine {
+  width: 80%;
+  border: none;
+  height: 30%;
+  border-radius: 5px;
+  word-break: break-all;
+  background-color: rgb(61, 133, 155);
+  color: rgb(247, 196, 103);
+  transition: 300ms;
+}
+.mine:hover {
+  background-color: rgba(61, 133, 155, 0.432);
+  cursor: pointer;
+}
+.deposit:hover {
+  background-color: rgba(136, 140, 145, 0.288);
+  cursor: pointer;
+}
+.withdraw:hover {
+  background-color: rgba(136, 140, 145, 0.226);
+  cursor: pointer;
+}
+
+.miniDetails {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  gap: 10px;
+  width: 80%;
+  margin-inline: auto;
+  margin-block-end: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: grey;
+  transition: 300ms;
+}
+
+.miniDetails:hover {
+  background-color: rgba(92, 90, 90, 0.158);
+  border-radius: 5px;
+}
+
+@media (max-width: 450px) {
+  .balanceInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .deposit {
+    height: 25px;
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+
+  .withdraw {
+    height: 25px;
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+
+  .mine {
+    height: 25px;
+
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+
+  .mainBalance {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .miniDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .mainBalance {
+    font-size: 1rem;
+  }
+
+  .plan {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .assets {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profit {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mineStatus {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

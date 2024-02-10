@@ -1,0 +1,61 @@
+.HomePageHeader {
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(black, rgba(0, 0, 0, 0.486));
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo {
+  width: 7%;
+  margin-inline-start: 20px;
+  width: clamp(40px, 10vw, 80px);
+}
+
+.menu {
+  display: flex;
+  gap: 7%;
+  width: 50%;
+  max-width: fit-content;
+  margin-block-start: 30px;
+}
+
+.menu p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.3rem, 0.5rem + 1vw, 1rem);
+}
+
+.menu p:hover {
+  cursor: pointer;
+}
+
+.menu p span {
+  margin-block-start: 10px;
+}
+
+@media (max-width: 500px) {
+  .HomePageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-inline-start: 20px;
+    font-size: 2rem;
+  }
+}

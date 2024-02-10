@@ -1,0 +1,13 @@
+.Coins {
+  background-color: rgb(22, 22, 22);
+  width: 98%;
+  margin-inline: auto;
+  margin-block-start: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 50px;
+  gap: 5px;
+}

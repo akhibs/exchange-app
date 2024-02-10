@@ -1,0 +1,75 @@
+.AuthBox {
+  display: flex;
+  gap: 10px;
+  margin-inline-end: 20px;
+}
+
+.login {
+  border: 3px white;
+  height: 50px;
+  width: 10vw;
+  max-width: 100px;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  border: white solid 1px;
+  transition: 500ms;
+}
+
+.login:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-weight: 900;
+}
+.signup {
+  border: none;
+  height: 50px;
+  width: 10vw;
+  max-width: 100px;
+  text-align: center;
+  background-color: white;
+}
+
+.signup:hover {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+@media (max-width: 500px) {
+  .AuthBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-inline-end: 20px;
+  }
+  .login {
+    border: 3px white;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+    transition: 500ms;
+  }
+
+  .login:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: 900;
+  }
+  .signup {
+    border: none;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    background-color: white;
+  }
+
+  .signup:hover {
+    cursor: pointer;
+    font-weight: 900;
+  }
+}
